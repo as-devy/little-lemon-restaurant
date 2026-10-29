@@ -1,16 +1,26 @@
-header {
+header,
+.section,
+section {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.container {
   grid-column: 2 / 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 0;
+  margin: 0 100px;
 }
 
-header .container {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .container .logo img{
+header .container .logo img {
   width: 200px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav ul {
@@ -19,13 +29,131 @@ nav ul {
   gap: 1rem;
 }
 
-nav ul a{
+nav ul a {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
   transition: .3s;
 }
 
-nav ul a:hover{
+nav ul a:hover {
   color: #F4CE14;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  margin: 100px 0;
+}
+
+.hero {
+  background-color: var(--secondry-color);
+  height: 50vh;
+  color: #fff;
+  margin-bottom: 200px;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .img {
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.hero .img img {
+  width: 60%;
+  position: absolute;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+
+.hero h5 {
+  font-size: 2rem;
+  margin-top: -12px;
+}
+
+.hero p {
+  max-width: 70%;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #e7e6e6;
+}
+
+.btn {
+  border: 0;
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 12px 35px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  transition: .3s;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: var(--hover-primary-color);
+}
+
+.specials .container {
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr;
+  grid-gap: 5rem;
+}
+
+.specials .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specials .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: fit-content;
+  gap: 2rem;
+}
+
+.specials .cards .card {
+  background: #DBDBDB;
+}
+
+.specials .cards .card .img img {
+  width: 100%;
+}
+
+.specials .cards .card .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 10px;
+}
+
+.specials .cards .card .info .price {
+  color: #127d00;
+}
+
+.specials .cards .card p {
+  margin: 25px 10px;
+  line-height: 1.5;
+}
+
+.specials .cards .card button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 15px;
+}
+
+.specials .cards .card button img{
+  width: 20px;
 }
