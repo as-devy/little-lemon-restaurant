@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
     return (
-        <main className='hero section'>
+        <main className='hero section' id="hero">
             <div className="container">
                 <div className="content">
                     <div className="heads">
