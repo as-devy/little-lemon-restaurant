@@ -154,6 +154,43 @@ section {
   gap: 15px;
 }
 
-.specials .cards .card button img{
+.specials .cards .card button img {
   width: 20px;
+}
+
+.booking .container{
+  grid-template-columns: auto;
+}
+
+.booking form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 450px !important;
+  margin: 2rem auto !important;
+  gap: 1.5rem !important;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  min-width: 50%;
+}
+
+.booking form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: -0.75rem;
+  display: block;
+}
+
+.booking form input[type="date"],
+input[type="number"],
+select {
+  width: 100% !important;
+  padding: 0.75rem 1rem !important;
+  border: 1px solid #d1d5db !important; 
+  border-radius: 8px !important;
+  font-size: 1rem !important;
+  background-color: #f9fafb !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+  height: auto !important;
 }

@@ -1,9 +1,9 @@
+import BookingForm from "../booking-ui/BookingForm"
 
-
-const BookingPage = ()=>{
+const BookingPage = ({ availableTimes, dispatch, submitForm })=>{
     return(
         <>
-            <h1>BookingPage</h1>
+            <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />
         </>
     )
 }
