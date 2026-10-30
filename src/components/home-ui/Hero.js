@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
     return (
         <main className='hero section'>
@@ -10,10 +12,10 @@ const Hero = () => {
                     <p>
                         We are a family-owned Mediterranean restaurant dedicated to serving authentic, generation-passed-down recipes made from the freshest local ingredients and aromatic herbs. Blending rich culinary traditions with a modern twist, we offer a welcoming atmosphere and bold, unforgettable flavors for every guest.
                     </p>
-                    <button className="btn">Reserve a Table</button>
+                    <Link to="/booking" className="btn">Reserve a Table</Link>
                 </div>
                 <div className="img">
-                    <img src="/hero-img.png" alt="hero-img"/>
+                    <img src="/hero-img.png" alt="" aria-hidden="true" />
                 </div>
             </div>
         </main>

@@ -41,7 +41,7 @@ const Celebration = () => {
           }
         `}
       </style>
-      <div id="congrats-container">
+      <div id="congrats-container" aria-hidden="true">
         {confettiItems.map((item) => (
           <div
             key={item.id}
